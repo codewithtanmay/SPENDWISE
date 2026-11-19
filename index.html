@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172554">
+  <meta name="description" content="SpendWise helps students record income, organise everyday expenses, plan a monthly budget and understand their spending habits.">
+  <title>SpendWise — Student Expense and Budget Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <main class="main-area">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <button class="brand" type="button" data-view="dashboard" aria-label="SpendWise dashboard">
+            <span class="brand-mark">S<span>.</span></span>
+            <span class="brand-copy"><strong>SpendWise</strong><small>STUDENT FINANCE</small></span>
+          </button>
+
+          <button class="mobile-menu-button" id="mobile-menu-button" type="button" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+
+          <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+            <p class="mobile-drawer-label">YOUR MONEY</p>
+            <button type="button" class="nav-link active" data-view="dashboard" aria-current="page">Dashboard</button>
+            <button type="button" class="nav-link" data-view="transactions">Transactions</button>
+            <button type="button" class="nav-link" data-view="budget">Budget planner</button>
+            <button type="button" class="nav-link" data-view="analytics">Analytics</button>
+            <button type="button" class="nav-link" data-view="settings">Settings</button>
+            <div class="mobile-drawer-note"><strong>SpendWise</strong><span>Your money, more clearly.</span></div>
+          </nav>
+
+          <div class="topbar-actions">
+            <span class="topbar-date" id="topbar-date"></span>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme"><span aria-hidden="true">☾</span></button>
+            <button class="topbar-add" type="button" data-action="add-transaction"><span aria-hidden="true">＋</span><span class="add-label">Add transaction</span></button>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+
+      <div class="page-heading-bar">
+        <div>
+          <p class="eyebrow" id="page-eyebrow">YOUR MONEY, MORE CLEARLY</p>
+          <h1 id="page-title">Dashboard</h1>
+        </div>
+        <p class="page-heading-note">A little clarity goes a long way.</p>
+      </div>
+
+      <div class="view-container" id="app-view" aria-live="polite"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
