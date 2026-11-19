@@ -4,6 +4,7 @@ SpendWise is a simple personal-finance companion designed for students. It helps
 
 ## Run the website
 
+
 1. Open `index.html` in a modern browser.
 2. For the most reliable browser storage behavior, open the folder in VS Code and use the Live Server extension.
 3. Open **Settings → Explore sample activity** to load example records.
